@@ -11,19 +11,38 @@
 </head>
 
 <body>
+    <div class="produtos">
+        <h3>Codigos</h3>
+        <h4>1.Batidora Artisan = $1289900</h4>
+        <h4>2.Licuadora = $829900</h4>
+        <h4>3.Freidora de aire = $299900</h4>
+        <h4>4.Nevera GL = $7819900</h4>
+        <h4>5.Horno microondas = $312200</h4>
+        <h4>6.Horno tostador = $69900</h4>
+        <h4>7.Bascula digital = $83900</h4>
+        <h4>8.Lavadora automatica = $1673000</h4>
+        <h4>9.Estufa vitroceramica = $1639900</h4>
+        <h4>10.Mini panini universal = $388700</h4>
+    </div> 
     <div class="contenedor">
-        <h3>1.Este programa muestra el signo zodiacal de una persona.
-            Para ello el usuario debe introducir únicamente el día y
-            el mes de nacimiento y el programa determinará inmediatamente
-            el signo zodiacal de la persona.</h3>
-        <form id="Formulario" action="api.php" method="post">
-            <label>Ingrese el dia de nacimiento</label>
-            <input type="text" name="dia">
-            <label>Ingrese el mes de nacimiento</label>
-            <input type="text" name="mes">
-            <input type="submit" value="Zodiaco">
+        <h3>2. De la galería de productos, el usuario introducirá el código y el número de unidades del producto que desea comprar. El programa determinará el total a pagar, como una factura. Ejemplo de factura.</h3>
+        <form class="form" id="form" method="post" action="api.php">
+            <label class="titulo">Pago producto</label>
+            <div>
+                <label>Ingresa el codigo del producto</label>
+                <input type="number" id="codigo" class="codigo" name="codigo" pattern="[0-9]+" required>
+            </div>
+            <div>
+                <label>Ingresa la cantidad de productos</label>
+                <input type="number" id="dia" class="dia" name="cantidad" pattern="[0-9]+" required>
+            </div>
+            <div>
+                <input type="submit" class="dia">
+            </div>
+            <div>
+                <p>El total a pagar es de: <b id="res"></b></p>
+            </div>
         </form>
-        <pre id="res"></pre>
     </div>
 </body>
 </html>

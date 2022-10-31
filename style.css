@@ -1,31 +1,51 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.contenedor{
+
+.produtos {
+    max-width: 20rem;
+    border: 2px solid black;
+    position: relative;
+    top: 16rem;
+    left: 17rem;
+}
+
+.contenedor {
     max-width: 45rem;
-    margin: auto auto;
-    margin-top: 10rem;
+    top: 20rem;
+    left: 40rem;
     border: 2px solid black;
     border-radius: 15px;
     padding: 10px;
+    position: absolute;
 }
-h3{
+
+h3 {
     margin: 10px;
-    text-align: justify;
+    text-align: center;
 }
-label{
+h4{
+    padding: 10px;
+}
+
+[class="titulo"] {
+    color: blue;
+    text-transform: uppercase;
+}
+
+label {
     display: block;
     text-align: center;
     margin: 10px;
 }
-input{
+
+input {
     display: block;
     margin: 10px auto;
 }
-pre{
-    text-align: center;
-    color: rgb(240, 15, 15);
-    font-size: 20px;
+
+b {
+    color: red
 }
