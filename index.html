@@ -12,57 +12,34 @@
 
 <body>
     <section class="seccion_1">
-        
         <form class="form" id="form" method="post" action="api.php">
-            <h2>Escribir un programa que permita ingresar para los N alumnos de una universidad: SEXO (‘M’ o ‘F’), edad y
-                carrera (‘A’,’B’,’C’). Imprimir la carrera con menor promedio de edad de sus alumnos que son varones</h2>
-            <label class="titulo">Promedio universidad</label>
+            <h2>Una persona adquirió un producto para pagar en 20 meses. El primer mes pagó $10, el segundo $20, el
+                tercero $40 y así sucesivamente. Realice un algoritmo para determinar cuánto debe pagar mensualmente y el
+                total de lo que pagó después de los 20 meses. (Investigación código DATE o DATATIME javaScricpt)</h2>
+            <label class="titulo">Pago en 20 meses</label>
             <div>
-                <label>Ingresa la cantidad de estudiantes</label>
-                <input type="number" id="cantidad" class="cantidad" name="cantidad" pattern="[0-9]+" required disabled>
-            </div>
-            <div>
-                <label>Ingrese el genero del estudiante</label>
-                <select name="genero" id="genero" required disabled>
-                    <option value=""></option>
-                    <option value="femenino">Femenino</option>
-                    <option value="masculino">Masculino</option>
-                </select>
+                <label>Ingresa la cantidad de meses</label>
+                <input type="date" id="meses" class="meses" name="meses" pattern="[0-9]+" required>
             </div>
             <div>
-                <label>Ingresa la edad del estudiante</label>
-                <input type="number" id="edad" class="edad" name="edad" pattern="[0-9]+" required disabled>
+                <input type="submit" class="dia">
             </div>
-            <div>
-                <label>Ingrese la carrera del estudiante</label>
-                <select name="carrera" id="carrera" required disabled>
-                    <option value="" disabled selected></option>
-                    <option value="a">A</option>
-                    <option value="b">B</option>
-                    <option value="c">C</option>
-                </select>
-            </div>
-            <div>
-                <input type="submit" class="submit" disabled>
-                <input type="button" class="Limpiar" value="Limpiar" disabled>
-            </div>
-            <div>La carrera con estudiantes de menor edad y varones es: 
-                <p id="res"></p>
-            </div>
+            <div>La carrera con estudiantes de menor edad y varones es: <p id="res"></p>
+                <div>
+                    <p id="res"></p>
+                </div>
         </form>
     </section>
-
     <section class="seccion_2">
         <table class="tabla" id="tabla_Carreras" border="">
             <thead>
                 <tr class="TITLE">
-                    <th colspan="4"">TABLA</th>                  
+                    <th colspan="3"">TABLA</th>                  
                 </tr>
                 <tr>
                     <th>COD</th>
-                    <th>GENERO</th>
-                    <th>EDAD</th>
-                    <th>CARRERA</th>                  
+                    <th>FECHA</th>
+                    <th>TOTAL A PAGAR</th>                 
                 </tr>
             </thead>
             <tbody id="dataTable_carreras"></tbody>
