@@ -13,33 +13,39 @@
 <body>
     <section class="seccion_1">
         <form class="form" id="form" method="post" action="api.php">
-            <h2>Una persona adquirió un producto para pagar en 20 meses. El primer mes pagó $10, el segundo $20, el
-                tercero $40 y así sucesivamente. Realice un algoritmo para determinar cuánto debe pagar mensualmente y el
-                total de lo que pagó después de los 20 meses. (Investigación código DATE o DATATIME javaScricpt)</h2>
-            <label class="titulo">Pago en 20 meses</label>
+            <h2>Un empleado de la tienda “Tiki Taka” realiza N ventas durante el día, se requiere saber cuántas de ellas
+                fueron mayores a $1000, cuántas fueron mayores a $500 pero menores o iguales a $1000, y cuántas fueron
+                menores o iguales a $500. Además, se requiere saber el monto de lo vendido en cada categoría y de forma
+                global.</h2>
+            <label class="titulo">Ventas de Tiki Taka</label>
             <div>
-                <label>Ingresa la cantidad de meses</label>
-                <input type="date" id="meses" class="meses" name="meses" pattern="[0-9]+" required>
+                <label>Ingresa la cantidad de ventas</label>
+                <input type="number" id="cantidad" class="cantidad" name="cantidad" pattern="[0-9]+" required disabled>
             </div>
             <div>
-                <input type="submit" class="dia">
+                <label>Ingrese el precio del producto</label>
+                <input type="number" id="precio" class="precio" name="precio" pattern="[0-9]+" required disabled>
             </div>
-            <div>La carrera con estudiantes de menor edad y varones es: <p id="res"></p>
-                <div>
-                    <p id="res"></p>
-                </div>
+            <div>
+                <input type="submit" class="submit" value="Enviar" disabled>
+                <input type="button" class="Limpiar" value="Limpiar" disabled>
+            </div>
+            <div>
+                <p id="res"></p>
+            </div>
         </form>
     </section>
+
     <section class="seccion_2">
         <table class="tabla" id="tabla_Carreras" border="">
             <thead>
                 <tr class="TITLE">
-                    <th colspan="3"">TABLA</th>                  
+                    <th colspan="3">FACTURA</th>                  
                 </tr>
                 <tr>
-                    <th>COD</th>
-                    <th>FECHA</th>
-                    <th>TOTAL A PAGAR</th>                 
+                    <th>VENTAS</th>
+                    <th>CANTIDAD DE VENTAS</th>
+                    <th>VALOR</th>                 
                 </tr>
             </thead>
             <tbody id="dataTable_carreras"></tbody>
