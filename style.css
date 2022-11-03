@@ -4,48 +4,56 @@
     box-sizing: border-box;
 }
 
-.produtos {
-    max-width: 20rem;
-    border: 2px solid black;
+.seccion_1 {
+    width: 50rem;
     position: relative;
-    top: 16rem;
-    left: 17rem;
+    left: 35rem;
+    top: 10rem;
 }
 
-.contenedor {
-    max-width: 45rem;
-    top: 20rem;
-    left: 40rem;
+form {
+    width: 50rem;
     border: 2px solid black;
-    border-radius: 15px;
-    padding: 10px;
-    position: absolute;
-}
-
-h3 {
-    margin: 10px;
+    border-radius: 5px;
     text-align: center;
-}
-h4{
     padding: 10px;
-}
-
-[class="titulo"] {
-    color: blue;
-    text-transform: uppercase;
 }
 
 label {
     display: block;
-    text-align: center;
     margin: 10px;
 }
 
-input {
-    display: block;
-    margin: 10px auto;
+[type="submit"],[type="button"] {
+    margin: 10px;
+    margin-top: 3rem;
+    cursor: pointer;
+    width: 5rem;
+    height: 2rem;
 }
 
-b {
-    color: red
+p {
+    font-size: 22px;
+    font-weight: bold;
+    color: red;
+}
+
+.seccion_2 {
+    position: absolute;
+    top: 10rem;
+    left: 10rem;
+}
+
+.tabla {
+    border-color: #000;
+    max-width: 20rem;
+    text-align: center;
+}
+
+.tabla tr th {
+    padding: 5px;
+}
+tbody td{
+    padding: 5px;
+    text-transform: uppercase;
 }
