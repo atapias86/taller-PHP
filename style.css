@@ -18,6 +18,9 @@ form {
     text-align: center;
     padding: 10px;
 }
+form h2{
+    text-align: justify;
+}
 
 label {
     display: block;
